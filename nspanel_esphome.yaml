@@ -53,7 +53,7 @@ wifi:
     gateway: ${gw}
     subnet: ${subnet}
     dns1: ${dns}
-    domain: ${domain}
+  domain: ${domain}
   ##### Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "${device_name}"
