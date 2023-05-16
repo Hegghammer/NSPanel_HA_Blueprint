@@ -19,11 +19,11 @@ substitutions:
   # nextion_update_url: !secret nspanel_update_url # add in your esphome secrets file. Example: "http://"HOME ASSISTANT IP":8123/local/nspanel/nspanel.tft"
 
   # ## static ip config ##
-  # ip: "10.0.0.7"
-  # gw: "10.0.0.138"
-  # subnet: "255.255.255.0"
-  # dns: "10.0.0.138"
-  # domain: ".local"
+  ip: "10.0.50.150"
+  gw: "10.0.50.1"
+  subnet: "255.255.255.0"
+  dns: "10.0.30.100"
+  domain: ".hegg.lan"
 
 ###### USE THIS ONLY FOR YOUR FIRST TFT UPLOAD
 ###### AND IF EXIT-REPARSE BUTTON FAILS
@@ -49,11 +49,11 @@ wifi:
   power_save_mode: none
   ##### advanced config - uncomment to use static IP-Config #####
   # manual_ip:
-  #   static_ip: ${ip}
-  #   gateway: ${gw}
-  #   subnet: ${subnet}
-  #   dns1: ${dns}
-  # domain: ${domain}
+  static_ip: ${ip}
+  gateway: ${gw}
+  subnet: ${subnet}
+  dns1: ${dns}
+  domain: ${domain}
   ##### Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "${device_name}"
